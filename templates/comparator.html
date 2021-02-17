@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.a {
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+<p id="demo"></p>
+
+
+<div class="a">
+<h2>Comparison</h2>
+<div class="row">
+  <div class="column">
+    <h2>Document 1</h2>
+    <iframe src="file1_processed.html" height="420" width="550"></iframe>
+  </div>
+  <div class="column">
+    <h2>Document 2</h2>
+    <iframe src="file2_processed.html" height="420" width="550"></iframe>
+</iframe>
+  </div>
+</div>
+
+</body>
+</html>
+
