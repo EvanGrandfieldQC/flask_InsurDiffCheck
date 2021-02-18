@@ -1,0 +1,18 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!app.py
+!text_ripper.py
+!unique_identifier.py
+!templates/comparator.html
+!templates/upload.html
+!templates/second_upload.html
+
+# ...even if they are in subdirectories
+!*/
+
+# if the files to be tracked are in subdirectories
+!*/a/b/file1.txt
+!*/a/b/c/*
